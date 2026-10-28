@@ -97,20 +97,6 @@ private struct ToolkitItem: Identifiable {
     }
 }
 
-struct SBGlassHero: View {
-    let title: String; let subtitle: String; let symbol: String
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Image(systemName: symbol).font(.system(size: 25, weight: .medium)).foregroundStyle(Color(hex: SBTheme.accentHex))
-            Text(title).font(.system(size: 25, weight: .bold))
-            Text(subtitle).font(.system(size: 12)).foregroundStyle(Color(hex: SBTheme.mutedHex))
-        }
-        .padding(18)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
-        .overlay(RoundedRectangle(cornerRadius: 24, style: .continuous).stroke(.white.opacity(0.08)))
-    }
-}
 
 private struct LabHeader: View {
     let title: String; let subtitle: String; let symbol: String
