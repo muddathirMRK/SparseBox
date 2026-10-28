@@ -1,0 +1,57 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+		200000000000000000000000 /* SparseBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000000 /* SparseBoxApp.swift */; };
+		200000000000000000000001 /* AppModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* AppModels.swift */; };
+		200000000000000000000002 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000002 /* Components.swift */; };
+		200000000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000003 /* ContentView.swift */; };
+		200000000000000000000004 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000004 /* DashboardView.swift */; };
+		200000000000000000000005 /* DeviceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000005 /* DeviceServices.swift */; };
+		200000000000000000000006 /* RestoreViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000006 /* RestoreViews.swift */; };
+		200000000000000000000007 /* DeviceViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000007 /* DeviceViews.swift */; };
+		200000000000000000000008 /* MobileGestaltView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000008 /* MobileGestaltView.swift */; };
+		200000000000000000000010 /* AirCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000010 /* AirCardViews.swift */; };
+		200000000000000000000011 /* ToolkitViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000011 /* ToolkitViews.swift */; };
+		200000000000000000000009 /* DeviceBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000009 /* DeviceBridge.swift */; };
+		400000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000001 /* Assets.xcassets */; };
+
+		100000000000000000000000 /* SparseBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparseBoxApp.swift; sourceTree = "<group>"; };
+		100000000000000000000001 /* AppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModels.swift; sourceTree = "<group>"; };
+		100000000000000000000002 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		100000000000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		100000000000000000000004 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		100000000000000000000005 /* DeviceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceServices.swift; sourceTree = "<group>"; };
+		100000000000000000000006 /* RestoreViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreViews.swift; sourceTree = "<group>"; };
+		100000000000000000000007 /* DeviceViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViews.swift; sourceTree = "<group>"; };
+		100000000000000000000008 /* MobileGestaltView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileGestaltView.swift; sourceTree = "<group>"; };
+		100000000000000000000010 /* AirCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCardViews.swift; sourceTree = "<group>"; };
+		100000000000000000000011 /* ToolkitViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolkitViews.swift; sourceTree = "<group>"; };
+		100000000000000000000009 /* DeviceBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBridge.swift; sourceTree = "<group>"; };
+		300000000000000000000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300000000000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		600000000000000000000001 /* SparseBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparseBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		500000000000000000000001 = {isa = PBXGroup; children = ( 500000000000000000000002, 500000000000000000000003, ); sourceTree = "<group>"; };
+		500000000000000000000002 /* SparseBox */ = {isa = PBXGroup; children = ( 100000000000000000000000 /* SparseBoxApp.swift */, 100000000000000000000001 /* AppModels.swift */, 100000000000000000000002 /* Components.swift */, 100000000000000000000003 /* ContentView.swift */, 100000000000000000000004 /* DashboardView.swift */, 100000000000000000000005 /* DeviceServices.swift */, 100000000000000000000006 /* RestoreViews.swift */, 100000000000000000000007 /* DeviceViews.swift */, 100000000000000000000008 /* MobileGestaltView.swift */, 100000000000000000000009 /* DeviceBridge.swift */, 100000000000000000000010 /* AirCardViews.swift */, 100000000000000000000011 /* ToolkitViews.swift */, 300000000000000000000002 /* Info.plist */, 300000000000000000000001 /* Assets.xcassets */, ); path = SparseBox; sourceTree = "<group>"; };
+		500000000000000000000003 /* Products */ = {isa = PBXGroup; children = ( 600000000000000000000001 /* SparseBox.app */, ); name = Products; sourceTree = "<group>"; };
+
+		700000000000000000000003 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( 200000000000000000000000 /* SparseBoxApp.swift in Sources */, 200000000000000000000001 /* AppModels.swift in Sources */, 200000000000000000000002 /* Components.swift in Sources */, 200000000000000000000003 /* ContentView.swift in Sources */, 200000000000000000000004 /* DashboardView.swift in Sources */, 200000000000000000000005 /* DeviceServices.swift in Sources */, 200000000000000000000006 /* RestoreViews.swift in Sources */, 200000000000000000000007 /* DeviceViews.swift in Sources */, 200000000000000000000008 /* MobileGestaltView.swift in Sources */, 200000000000000000000009 /* DeviceBridge.swift in Sources */, 200000000000000000000010 /* AirCardViews.swift in Sources */, 200000000000000000000011 /* ToolkitViews.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		700000000000000000000004 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		700000000000000000000005 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ( 400000000000000000000001 /* Assets.xcassets in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+
+		700000000000000000000002 /* SparseBox */ = {isa = PBXNativeTarget; buildConfigurationList = 700000000000000000000007 /* Build configuration list for PBXNativeTarget "SparseBox" */; buildPhases = ( 700000000000000000000003 /* Sources */, 700000000000000000000004 /* Frameworks */, 700000000000000000000005 /* Resources */, ); buildRules = (); dependencies = (); name = SparseBox; productName = SparseBox; productReference = 600000000000000000000001 /* SparseBox.app */; productType = "com.apple.product-type.application"; };
+		700000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 2700; TargetAttributes = { 700000000000000000000002 = {CreatedOnToolsVersion = 27.0; }; }; }; buildConfigurationList = 700000000000000000000006 /* Build configuration list for PBXProject "SparseBox" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ); mainGroup = 500000000000000000000001; productRefGroup = 500000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = ( 700000000000000000000002 /* SparseBox */, ); };
+
+		700000000000000000000006 /* Build configuration list for PBXProject "SparseBox" */ = {isa = XCConfigurationList; buildConfigurations = ( 700000000000000000000008, 700000000000000000000009, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		700000000000000000000007 /* Build configuration list for PBXNativeTarget "SparseBox" */ = {isa = XCConfigurationList; buildConfigurations = ( 70000000000000000000000A, 70000000000000000000000B, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		700000000000000000000008 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_DOCUMENTATION_COMMENTS = YES; CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+		700000000000000000000009 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_DOCUMENTATION_COMMENTS = YES; CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+		70000000000000000000000A /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = SparseBox/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.sparsebox.ios; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; SUPPORTS_MACCATALYST = NO; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; ENABLE_PREVIEWS = YES; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; }; name = Debug; };
+		70000000000000000000000B /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = SparseBox/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.sparsebox.ios; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; SUPPORTS_MACCATALYST = NO; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; ENABLE_PREVIEWS = YES; }; name = Release; };
+	};
+	rootObject = 700000000000000000000001 /* Project object */;
+}
