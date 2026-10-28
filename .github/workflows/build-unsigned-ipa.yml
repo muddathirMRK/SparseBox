@@ -1,0 +1,107 @@
+name: Build SparseBox unsigned IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build SparseBox for iPhone
+    runs-on: macos-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Show Apple toolchain
+        run: |
+          xcodebuild -version
+          xcodebuild -showsdks
+
+      - name: Extract original SparseBox project
+        run: |
+          set -euo pipefail
+
+          ZIP_FILE="SparseBox-GitHub-Ready.zip"
+
+          if [ ! -f "$ZIP_FILE" ]; then
+            echo "ERROR: $ZIP_FILE was not found."
+            echo "Files in repository:"
+            ls -la
+            exit 1
+          fi
+
+          rm -rf build-source
+          mkdir -p build-source
+
+          unzip -q "$ZIP_FILE" -d build-source
+
+          echo "Extracted project:"
+          find build-source -maxdepth 4 -type f | sort
+
+      - name: Locate Xcode project
+        run: |
+          set -euo pipefail
+
+          PROJECT_PATH="$(find build-source -name 'SparseBox.xcodeproj' -type d -print -quit)"
+
+          if [ -z "$PROJECT_PATH" ]; then
+            echo "ERROR: SparseBox.xcodeproj was not found."
+            exit 1
+          fi
+
+          echo "PROJECT_PATH=$PROJECT_PATH" >> "$GITHUB_ENV"
+          echo "Found project at: $PROJECT_PATH"
+
+      - name: Build unsigned iOS app
+        run: |
+          set -euo pipefail
+
+          rm -rf "$RUNNER_TEMP/DerivedData"
+
+          xcodebuild \
+            -project "$PROJECT_PATH" \
+            -scheme SparseBox \
+            -sdk iphoneos \
+            -configuration Release \
+            -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            build
+
+      - name: Package unsigned IPA
+        run: |
+          set -euo pipefail
+
+          APP_PATH="$RUNNER_TEMP/DerivedData/Build/Products/Release-iphoneos/SparseBox.app"
+
+          if [ ! -d "$APP_PATH" ]; then
+            echo "ERROR: SparseBox.app was not produced."
+            exit 1
+          fi
+
+          PACKAGE_DIR="$RUNNER_TEMP/ipa-package"
+
+          rm -rf "$PACKAGE_DIR"
+          mkdir -p "$PACKAGE_DIR/Payload"
+
+          ditto "$APP_PATH" "$PACKAGE_DIR/Payload/SparseBox.app"
+
+          cd "$PACKAGE_DIR"
+          /usr/bin/zip -qry "$GITHUB_WORKSPACE/SparseBox-unsigned.ipa" Payload
+
+          echo "Created:"
+          ls -lh "$GITHUB_WORKSPACE/SparseBox-unsigned.ipa"
+
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: SparseBox-unsigned-ipa
+          path: SparseBox-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 14
