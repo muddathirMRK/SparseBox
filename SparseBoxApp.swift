@@ -6,7 +6,7 @@ struct SparseBoxApp: App {
         WindowGroup {
             ContentView()
                 .preferredColorScheme(.dark)
-                .tint(SBTheme.accent)
+                .tint(Color(hex: SBTheme.accentHex))
         }
     }
 }
